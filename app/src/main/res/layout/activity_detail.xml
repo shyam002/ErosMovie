@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+>
+    <ImageView android:id="@+id/backimageview"
+               android:layout_width="match_parent" android:layout_height="0dp"
+               android:src="@drawable/backimage"
+               android:scaleType="fitXY"
+               android:layout_weight=".4"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                  android:layout_weight=".6"
+                  android:orientation="vertical">
+        <TextView android:id="@+id/titleTV"
+                  style="@style/CLLB"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="10dp"
+                  android:text="Dilwale Dulhania Le Jayenge"
+        />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:padding="5dp">
+            <TextView android:id="@+id/dateTV"
+                      style="@style/CLSB"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentLeft="true"
+                      android:text="1995-10-20"
+            />
+            <CheckBox android:id="@+id/favimageview"
+                       android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:checked="false"
+                       android:button="@drawable/customdrawablecheckbox"
+                       android:layout_alignParentRight="true"
+            />
+        </RelativeLayout>
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/descTV"
+                      style="@style/CLSB"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="5dp"
+                      android:text="Raj is a rich, carefree, happy-go-lucky second generation NRI. Simran is the daughter of Chaudhary Baldev Singh, who in spite of being an NRI is very strict about adherence to Indian values. Simran has left for India to be married to her childhood fiancé. Raj leaves for India with a mission at his hands, to claim his lady love under the noses of her whole family. Thus begins a saga."
+            />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

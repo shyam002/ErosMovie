@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ErosMovie</string>
+    <string name="title_TopRated">Top Rated</string>
+    <string name="title_favourite">Favourite</string>
+</resources>
